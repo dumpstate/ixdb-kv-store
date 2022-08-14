@@ -2,15 +2,24 @@
 
 IndexedDB API is hard to work with. Key-Value store-like wrapper to make it super easy.
 
-## Usage
+## Installation
 
-Install the dependency:
+Package is published to GitHub Packages NPM registry. Add to your `.npmrc`:
 
-```sh
-npm install @dumpstate/ixdb-kv-store
+```
+@dumpstate:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=<GITHUB_TOKEN_WITH_READ_PACKAGES_SCOPE>
 ```
 
-create the store:
+install package:
+
+```sh
+npm install @dumpstate ixdb-kv-store --save
+```
+
+## Usage
+
+Create the store:
 
 ```ts
 const store = await KVStore.create('my_store')
@@ -22,7 +31,7 @@ add values:
 await store.set('a-key', 'a-value')
 ```
 
-fetch values:
+fetch values by key:
 
 ```ts
 await store.get('a-key')
