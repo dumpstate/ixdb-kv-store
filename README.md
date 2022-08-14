@@ -14,7 +14,7 @@ Package is published to GitHub Packages NPM registry. Add to your `.npmrc`:
 install package:
 
 ```sh
-npm install @dumpstate ixdb-kv-store --save
+npm install @dumpstate/ixdb-kv-store --save
 ```
 
 ## Usage
