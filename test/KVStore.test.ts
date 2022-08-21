@@ -36,4 +36,14 @@ describe('KVStore', () => {
 
         expect(await store.get('unknown key')).to.be(undefined)
     })
+
+    it('should fail to create the client if indexedDB not available', async () => {
+        KVStore.create = async () => {
+            throw Error('Oops')
+        }
+
+        const store = await KVStore.tryCreate('foo')
+
+        expect(store).to.be(null)
+    })
 })

@@ -1,6 +1,6 @@
 {
   "name": "@dumpstate/ixdb-kv-store",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "IndexedDB-based key-value store.",
   "main": "lib/index.js",
   "scripts": {

@@ -46,6 +46,18 @@ export class KVStore {
         })
     }
 
+    public static async tryCreate(name: string): Promise<KVStore | null> {
+        try {
+            const kvStore = await KVStore.create(name)
+
+            return kvStore
+        } catch (err) {
+            console.error('Can\'t use IndexedDB')
+
+            return null
+        }
+    }
+
     get<T = any>(key: string): Promise<T> {
         const store = this.db
             .transaction(KV_STORE_NAME, 'readonly')
