@@ -1,6 +1,6 @@
 {
 	"name": "@dumpstate/ixdb-kv-store",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "IndexedDB-based key-value store.",
 	"main": "lib/index.js",
 	"scripts": {
@@ -15,7 +15,7 @@
 		"url": "git+ssh://git@github.com/dumpstate/ixdb-kv-store.git"
 	},
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/",
+		"registry": "https://registry.npmjs.org/",
 		"access": "public"
 	},
 	"author": "Albert Sadowski <asadowski@mailbox.org>",
