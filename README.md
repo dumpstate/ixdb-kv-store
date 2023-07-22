@@ -22,17 +22,17 @@ npm install @dumpstate/ixdb-kv-store --save
 Create the store:
 
 ```ts
-const store = await KVStore.create('my_store')
+const store = await KVStore.create("my_store")
 ```
 
 add values:
 
 ```ts
-await store.set('a-key', 'a-value')
+await store.set("a-key", "a-value")
 ```
 
 fetch values by key:
 
 ```ts
-await store.get('a-key')
+await store.get("a-key")
 ```

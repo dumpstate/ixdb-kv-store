@@ -1,36 +1,39 @@
 {
-  "name": "@dumpstate/ixdb-kv-store",
-  "version": "0.2.0",
-  "description": "IndexedDB-based key-value store.",
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "tsc",
-    "prepublish": "npm run build",
-    "test": "karma start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/dumpstate/ixdb-kv-store.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
-  },
-  "author": "Albert Sadowski <asadowski@mailbox.org>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dumpstate/ixdb-kv-store/issues"
-  },
-  "homepage": "https://github.com/dumpstate/ixdb-kv-store#readme",
-  "devDependencies": {
-    "@types/expect.js": "^0.3.29",
-    "@types/mocha": "^10.0.1",
-    "expect.js": "^0.3.1",
-    "karma": "^6.4.2",
-    "karma-chrome-launcher": "^3.2.0",
-    "karma-mocha": "^2.0.1",
-    "karma-typescript": "^5.5.4",
-    "mocha": "^10.2.0",
-    "typescript": "^5.1.6"
-  }
+	"name": "@dumpstate/ixdb-kv-store",
+	"version": "0.2.0",
+	"description": "IndexedDB-based key-value store.",
+	"main": "lib/index.js",
+	"scripts": {
+		"build": "tsc",
+		"lint": "prettier --check .",
+		"prepublish": "npm run build",
+		"style:fix": "prettier --write .",
+		"test": "karma start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/dumpstate/ixdb-kv-store.git"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/",
+		"access": "public"
+	},
+	"author": "Albert Sadowski <asadowski@mailbox.org>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dumpstate/ixdb-kv-store/issues"
+	},
+	"homepage": "https://github.com/dumpstate/ixdb-kv-store#readme",
+	"devDependencies": {
+		"@types/expect.js": "^0.3.29",
+		"@types/mocha": "^10.0.1",
+		"expect.js": "^0.3.1",
+		"karma": "^6.4.2",
+		"karma-chrome-launcher": "^3.2.0",
+		"karma-mocha": "^2.0.1",
+		"karma-typescript": "^5.5.4",
+		"mocha": "^10.2.0",
+		"prettier": "^3.0.0",
+		"typescript": "^5.1.6"
+	}
 }
